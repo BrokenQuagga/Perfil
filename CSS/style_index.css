@@ -1,10 +1,9 @@
 html {
-    background-color: rgb(48, 48, 48);
+  background: black;
 }
 
-
-body{
-    margin-top: 5%;
+#presentacion{
+    margin-top: 2%;
     height: fit-content;
     width: 70%;
     margin-left: auto;
@@ -13,25 +12,76 @@ body{
     align-items: center;
 }
 
-h1{
+#presentacion h1{
     font-family: 'Bebas Neue', sans-serif;
     font-family: 'Kanit', sans-serif;
     font-weight: 700;
-    font-size: 45px;
+    font-size: 50px;
     align-items: center;
     margin: 10%;
-    color: white;
+    background: linear-gradient(to right, rgb(255, 0, 255), rgb(251, 255, 0));
+    -webkit-background-clip: text;
+    color: transparent;
     height: fit-content;
     width: fit-content;
     width:fit-content;
     height: fit-content;
-
+    transition: 1s;
 }
 
-#imagen_graduado{   
+#presentacion #imagen_graduado{   
     height: 500px;
-    border-radius: 40px;
-    margin:5%;
+    border-radius: 40px;    
+    vertical-align: middle;
+    transition: 1s;
+}
+
+#presentacion h1:hover {
+    transform: scale(1.05);
+}
+
+#presentacion #imagen_graduado:hover{
+    transform: scale(1.2);
+    border-radius: 70px;
+}
+
+#lenguajes{
+    margin-top: 2%;
+    background: linear-gradient(to right, rgb(255, 0, 255), rgb(251, 255, 0));
+    width: fit-content;
+    align-items: center;
+    margin-left: 15%;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-size: 30px;
+    background: linear-gradient(to right, rgb(255, 0, 255), rgb(251, 255, 0));
+    -webkit-background-clip: text;
+    color: transparent;
+    height: fit-content;
+    transition: 1s;
+    margin-bottom: 10%;
+}
+
+#lenguajes:hover{
+    transform: scale(1.05);
+}
+
+#lenguajes ul{
+
+    align-items: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#lenguajes p{
+    background: linear-gradient(to right, rgb(255, 0, 255), rgb(251, 255, 0));
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 40px;
+}
+
+#logo{
+    height:40px;
     vertical-align: middle;
 }
-

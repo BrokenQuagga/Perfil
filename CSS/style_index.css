@@ -1,87 +1,118 @@
-html {
-  background: black;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
 }
 
-#presentacion{
-    margin-top: 2%;
-    height: fit-content;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+header {
+    font-weight:bold;
+    background-color: #000562;
+    color: white;
     display: flex;
-    align-items: center;
-}
-
-#presentacion h1{
-    font-family: 'Bebas Neue', sans-serif;
-    font-family: 'Kanit', sans-serif;
-    font-weight: 700;
-    font-size: 50px;
-    align-items: center;
-    margin: 10%;
-    background: linear-gradient(to right, rgb(255, 0, 255), rgb(251, 255, 0));
-    -webkit-background-clip: text;
-    color: transparent;
-    height: fit-content;
-    width: fit-content;
-    width:fit-content;
-    height: fit-content;
-    transition: 1s;
-}
-
-#presentacion #imagen_graduado{   
-    height: 500px;
-    border-radius: 40px;    
+    padding: 1em;
     vertical-align: middle;
-    transition: 1s;
+    justify-content: space-between;
 }
 
-#presentacion h1:hover {
-    transform: scale(1.05);
-}
-
-#presentacion #imagen_graduado:hover{
-    transform: scale(1.2);
-    border-radius: 70px;
-}
-
-#lenguajes{
-    margin-top: 2%;
-    background: linear-gradient(to right, rgb(255, 0, 255), rgb(251, 255, 0));
-    width: fit-content;
-    align-items: center;
-    margin-left: 15%;
-    font-family: 'Bebas Neue', sans-serif;
-    font-family: 'Kanit', sans-serif;
-    font-size: 30px;
-    background: linear-gradient(to right, rgb(255, 0, 255), rgb(251, 255, 0));
-    -webkit-background-clip: text;
-    color: transparent;
-    height: fit-content;
-    transition: 1s;
-    margin-bottom: 10%;
-}
-
-#lenguajes:hover{
-    transform: scale(1.05);
-}
-
-#lenguajes ul{
-
-    align-items: center;
-    width: fit-content;
+header nav{
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 1em;
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
 }
 
-#lenguajes p{
-    background: linear-gradient(to right, rgb(255, 0, 255), rgb(251, 255, 0));
-    -webkit-background-clip: text;
-    color: transparent;
+header h1{
+    margin-left: 5%;
+}
+
+
+header nav a{
+    color: white;
+    text-decoration: none;
+    padding: 1.2em;
+    margin-left: 10px;
+    transition: 0.4s;
+}
+
+header nav a:hover{
+    transform: scale(1.1);
+}
+
+#presentation{
+    padding-block: 3em;
+    background-color: #00C8FF;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+#presentation #name{
     font-size: 40px;
+    width: fit-content;
+    padding: 20px;
+    margin-left: 15%;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+}
+#presentation #graduado{
+    height: 400px;
+    width: auto;  
+    margin-left: auto;
+    vertical-align: middle;
+    border: black solid 5px;
+    border-radius: 200px;
+    margin-right: 25%;
+    transition: 0.5s;
 }
 
-#logo{
-    height:40px;
-    vertical-align: middle;
+#presentation #graduado:hover{
+    transform: scale(1.05);
+}
+
+#union{
+    height: 150px;
+    background: linear-gradient(#00C8FF, #004EB3);
+}
+
+#union_inversa {
+    height: 150px;
+    background: linear-gradient(#004EB3, #00C8FF);
+}
+
+#sobremi {
+    background-color: #004EB3;
+    color:white;
+    text-align: left;
+    display: flex;
+    padding-bottom: 10em;
+}
+
+#sobremi h2{
+    font-size:100px;
+    margin-right: 1em;
+    margin-left: 4em;
+}
+
+#sobremi p{
+    font-size: 30px;
+    width: 25%;
+}
+
+footer {
+    background-color: #000562;
+    color: white;
+    text-align: center;
+    position: fixed;
+    padding: 2px;
+    bottom: 0;
+    width: 100%;
 }
